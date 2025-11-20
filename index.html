@@ -2,16 +2,46 @@
 <html>
     <head>
         <title>Woolworths | Homepage</title>
-</head>
-<body>
-    <a href="index.html">Home</a>
-    <a href="about us.html">About</a>
-    <a href="product and services.html">Services</a>
-    <a href="contact us.html">Contact Us</a>
-    <a href="FAQ.html">FAQ</a>
 
-    <h1>Welcome to Woolworths</h1>
-    <img src="img/clothing.jpg" width 100%>
+        <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <!--Navigation Bar-->
+    <a href="index.html">Home</a> |
+    <a href="about us.html">About</a> |
+    <a href="product and services.html">Services</a> |
+    <a href="contact us.html">Contact Us</a> |
+    <a href="FAQ.html">FAQ</a> |
+
+    <h1>Welcome to Woolworths</h1><button onclick="alert('Welcome to the Woolies store!Enjoy your shopping')">Welcome</button>
+      <h1 onclick="alert('This is the Home Page')"> Woolies Store</h1><button id="showMessageBtn">Click Me</button>
+    
+    <p id="messageArea"></p>
+
+    <script>
+      document.getElementById("showMessageBtn"). addEventListener("click", function() {
+        document.getElementById("messageArea").innerHTML ="Welcome to Woolies! Enjoy yor shopping.";
+      });
+
+    </script>
+    
+    <script src="js/script.js"></script>
+
+Woolworths — often referred to as “Woolies” — is a prominent South African retail company, officially known as Woolworths Holdings Limited, and is headquartered in Cape Town. Founded in 1931 by Max Sonnenberg, Woolies has grown into a diversified retail group offering food, fashion, homeware, beauty products, and financial services. 
+
+
+The company operates on several fronts: its full-line stores combine food, clothing, and home goods; it runs standalone food stores (including smaller “Food Market” formats); and it also has cafés under the WCafé brand. 
+
+ Woolworths also owns Absolute Pets, a pet-supply chain, which became part of its group more recently.
+
+In terms of business strategy, Woolies places a strong emphasis on sustainability and customer experience. It has embedded its “Good Business Journey” into operations for years, and recently launched a long-term sustainability strategy that includes supporting small businesses and community development.
+ On the retail front, Woolworths is heavily investing in its digital and omni-channel capabilities. Its on-demand delivery platform, Woolies Dash, has seen very strong growth, with same-day delivery and a dedicated “dark store” network to support online orders. 
+ 
+Financially, the food division has been a major growth driver. In its recent trading results, the food business showed strong volume growth, and on-demand and online sales contributed significantly to its turnover. 
+Sunday Independent
+
+In short, Woolies is not just a supermarket — it’s a premium, multi-category retailer that combines high-quality food, fashion, homeware, and financial services, while aggressively scaling its online presence and focusing on sustainability.
+    <img src="images/clothing.jpg" width="30%">
     <h2>What keeps us going... </h2>
   
     <ul>
@@ -41,6 +71,8 @@
       <a href=>Privacy Policy</a> |
       <a href=>Returns</a> |
       <a href=>Help Center</a>
+      
+      <button onclick="indexAlert()">External JS</button>
 
     </body>
 </html>

@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Woolworths | FAQ</title>
+        <title>Woolworths | FAQ</title> 
+
+          <link rel="stylesheet" href="css/style.css"> 
 </head>
  <body>
-    <a href="index.html">Home</a>
-    <a href="about us.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact us.html">Contact Us</a>
-    <a href="FAQ.html">FAQ</a>
+    <a href="index.html">Home</a> |
+    <a href="about us.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact us.html">Contact Us</a> |
+    <a href="FAQ.html">FAQ</a> |
+
 
         <h2>FAQ</h2>
            <h3>Do you offer delivery?</h3>
@@ -25,5 +28,34 @@
 
            <h3>Do you have a loyalty programme</h3>
            <p>Yes, our rewards programme offers member only discounts, personalised offers and special promotions</p>
-    </body>
-</html>
+     
+         <footer>2025 Woolies</footer>  
+
+         <p onclick="alert('We deliver within 2-5 working days.')">How long does the delivery take</p>
+         <p onclick="alert('Yes, you can return th item within 30 days.')">Can i return an item?</p>
+         <p onclick="alert('You can track your order using the tracking linl sentto your email.')">How do i track my order</p>
+            <script>
+            function faqMsg() {
+               alert("More helpful answers are coming soon!");
+            }
+            </script>
+            
+            <script src="js/script.js"></script>
+
+
+            </head>
+            <body>
+
+            <h1>FAQ</h1>  
+            <p><strong>Q:</strong>Track my order?
+            <br><strong>A:</strong>Yes, tracking details sent via email.</p>
+
+            <p><strong>Q:</strong>Student discounts?
+            <br><strong>A:</strong>Yes, with valid ID in selected stores.</p>
+
+            <button onclick="faqMsg()">More Questions</button>
+            
+            <button onclick="faqAlert()">External JS</button>
+
+ </body>        
+ </html>

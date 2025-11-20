@@ -2,13 +2,15 @@
 <html>
     <head>
         <title>Woolworths | Contact Us</title>
+
+      <link rel="stylesheet" href="css/style.css">         
 </head>
 <body>
-    <a href="index.html">Home</a>
-    <a href="about us.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="contact us.html">Contact Us</a>
-    <a href="FAQ.html">FAQ</a>
+    <a href="index.html">Home</a> |
+    <a href="about us.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact us.html">Contact Us</a> |
+    <a href="FAQ.html">FAQ</a> |
 
         <h1>Contact Us</h1>
         <p>Have a question? Reach out using the email, call us or visit one of our stores</p>
@@ -37,5 +39,46 @@
         <p>Saturday: 9:00AM-6:00PM</p>
         <p>Sunday and Public Holiday: 9:00AM-4:00PM</p>
 
-    </body>
+      <footer>2025 Woolies</footer> 
+
+      <button onclick="alert('Your message has been sent')">Send Message</button>
+      <p onclick="alert('Call us on: 0860 022 220 ')">Tap here for our contact number</p>
+
+      <script> 
+          function sendMessage() {
+            const name =
+          document.getElementById("name").value;  
+            const email =
+          document.getElementById("email").value;
+            const message =
+          document.getElementById("message").value;
+              
+              if (!name || !email|| !message) {
+                  alert("Please fill in all fields.");
+              }else { 
+                alert("Thank you, " +name + "!Your message has been sent.");
+              }
+
+          }
+          </script>
+          
+          <script src="js/script.js"></script>
+
+        </head>
+          
+        <body>
+
+        <h1>Contact us</h1>
+
+         <input type="text" id="name"
+         placeholder="Your Name"><br><br>
+         <input type="email" id="email
+         placeholder="Your Email"><br><br>
+         <textarea id="message"placeholder="Your Message"></textarea><br><br>
+
+         <button onclick="sendMessage()">Send</button>
+
+    <button onclick="ContactAlert()">External JS</button>
+         
+</body>
 </html>

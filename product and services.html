@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Woolworths | Services</title>
+        <title>Woolworths | Services</title> 
+
+         <link rel="stylesheet" href="css/style.css">
 </head>
  <body>
-    <a href="index.html">Home</a>
-    <a href="about us.html">About</a>
-    <a href="product and services.html">Services</a>
-    <a href="contact us.html">Contact Us</a>
-    <a href="FAQ.html">FAQ</a>
+    <a href="index.html">Home</a> |
+    <a href="about us.html">About</a> |
+    <a href="product and services.html">Services</a> |
+    <a href="contact us.html">Contact Us</a> |
+    <a href="FAQ.html">FAQ</a> |
 
         <h1>Woolies</h1>
         <ul> 
@@ -21,15 +23,20 @@
 
         <h2>Groceries</h2>       
              <h3>Fresh Strawberries 250g</h3>
+             <img src="images/strawberry.jpg" width="30%">
              <p>Price: R39.99</p>
              <h3>Free range eggs (18)</h3>
+             <img src="images/eggs.jpg" width="30%">
+
              <p>Price: R89.99</p>
            </section>
 
         <h2>Clothing</h2> 
             <h3>Mens Slim Fit T-shirt</h3>
+            <img src="images/slim fit.jpg" width="30%">
             <p>Price: R250</p>
             <h3>Womens Cotton Crew Tee</h3>
+            <img src="images/cotton crew.jpg" width="30%">
             <p>Price: 199</p>
 
         <h2>Homeware</h2> 
@@ -48,5 +55,32 @@
             <li>Easy Returns</li>
             <li>Customer Care</li>
         </ul>
-    </body>
+        <button onclick="alert('Thank you for viewing our Products & Services!');">Click Me</button>
+
+    
+    <script>
+            function showProducts() {
+                alert("We offer a wide range of Proucts and Serives!");
+            }
+    
+    </script>
+
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+
+<h1>Products and Services</h1> 
+
+<ul>
+    <li>Fresh Groceries</li>
+    <li>Clothing</li>
+    <li>Home Goods</li>
+</ul>
+
+<button onclick="showProducts()">View Info</button>
+
+<button onclick="productandservicesAlert()">External JS</button>
+
+</body>
 </html>
